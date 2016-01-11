@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Solmate</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="login">NEXT</string>
+    <string name="title_activity_otp">OTP</string>
+    <string name="title_activity_main">Solmate</string>
+    <string name="main_button">Request Question Set</string>
+    <string name="title_activity_otp_final">Solmate</string>
+    <string name="title_activity_otp_final2">otp_final2</string>
+    <string name="title_activity_upload">Upload Solution</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="title_activity_history">History</string>
+    <string name="logout">There is no need to log out unless you are changing the device. Are you still sure?</string>
+    <string name="submission_message">This is your final submission for the set,
+        you cannot edit the submission at any later point of time,
+        enter any comments for the answer below</string>
+</resources>

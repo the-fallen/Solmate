@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="in.sarthy.solmate">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/stub"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme2">
+        >
+        <activity
+            android:name="in.sarthy.solmate.Splash"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="in.sarthy.solmate.OTP"
+            android:label="@string/title_activity_otp"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:launchMode = "singleInstance"/>
+        <activity
+            android:name="in.sarthy.solmate.Main"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2.NoActionBar" />
+        <activity
+            android:name="in.sarthy.solmate.otp_final"
+            android:label="@string/title_activity_otp_final"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="in.sarthy.solmate.otp_final2"
+            android:label="@string/title_activity_otp_final2"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="in.sarthy.solmate.profile"
+            android:label="@string/title_activity_profile"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2.NoActionBar" />
+        <activity
+            android:name="in.sarthy.solmate.history"
+            android:label="@string/title_activity_history"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2.NoActionBar" />
+        <activity
+            android:name="in.sarthy.solmate.upload"
+            android:label="@string/title_activity_upload"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2.NoActionBar"/>
+    <receiver android:name="in.sarthy.solmate.IncomingSms">
+        <intent-filter android:priority="1000">
+            <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+        </intent-filter>
+    </receiver>
+
+</application>
+
+<uses-permission android:name="android.permission.RECEIVE_SMS"/>
+<uses-permission android:name="android.permission.READ_SMS" />
+<!--<uses-permission android:name="android.permission.SEND_SMS">-->
+<!--</uses-permission>-->
+
+    </manifest>

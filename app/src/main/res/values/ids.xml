@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="titleId" type="id" />
+    <item name="svId" type="id" />
+    <item name="temp1Id" type="id" />
+    <item name="temp2Id" type="id" />
+    <item name="temp3Id" type="id" />
+</resources>

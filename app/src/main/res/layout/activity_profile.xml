@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="in.sarthy.solmate.profile">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme2.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.MyApp.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            style="@style/Widget.MyApp.Toolbar.Solid"
+            />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_profile" />
+
+    <TextView
+        android:text="Logout"
+        android:layout_gravity="bottom|end"
+        android:padding="4dp"
+        android:background="@drawable/rounded_bg"
+        android:id="@+id/label3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="30dp"
+        android:alpha="0"
+        android:layout_marginRight="72dp"/>
+    <TextView
+        android:text="Edit"
+        android:layout_gravity="bottom|end"
+        android:padding="4dp"
+        android:id="@+id/editsave"
+        android:alpha="0"
+        android:background="@drawable/rounded_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="72dp"/>
+    <TextView
+        android:text="History"
+        android:padding="4dp"
+        android:id="@+id/label1"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/rounded_bg"
+        android:alpha="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:gravity="bottom|end"
+        android:layout_marginRight="72dp"/>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab3"
+        app:fabSize="mini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="24dp"
+        app:backgroundTint="#0077B8"
+        app:borderWidth="0dp"
+        android:src="@drawable/ic_power_settings_new_white_36dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab2"
+        app:fabSize="mini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="24dp"
+        app:backgroundTint="#0077B8"
+        app:borderWidth="0dp"
+        android:src="@drawable/ic_create_white_36dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab1"
+        app:fabSize="mini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="24dp"
+        app:backgroundTint="#0077B8"
+        app:borderWidth="0dp"
+        android:src="@drawable/ic_hourglass_empty_white_36dp" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="@dimen/fab_margin"
+        app:elevation="10dp"
+        android:layout_marginBottom="16dp"
+        app:backgroundTint="#0077B8"
+        app:borderWidth="0dp"
+        android:src="@drawable/ic_add_white_18dp" />
+
+
+</android.support.design.widget.CoordinatorLayout>

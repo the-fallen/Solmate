@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="in.sarthy.solmate.Main">
+
+    <!-- "Mark Favorite", should appear as action button if possible -->
+    <item
+        android:title="My Profile"
+        android:id="@+id/MyProfile"
+        android:icon="@drawable/profile"
+        app:showAsAction="ifRoom"/>
+</menu>
